@@ -4,7 +4,7 @@ FROM maven:alpine
 WORKDIR /app
 
 COPY . /app
-COPY ../32602Exp005_CommonProjectForBPOT2117/src/main/java/src  /src/main/java/src 
+COPY ../32602Exp005/32602Exp005_CommonProjectForBPOT2117/src/main/java/src  /src/main/java/src 
 
 RUN mvn -v
 RUN mvn clean install -DskipTests
