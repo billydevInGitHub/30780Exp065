@@ -4,10 +4,10 @@ FROM maven:alpine
 WORKDIR /app
 
 COPY . /app
-COPY ../../32602Exp005/32602Exp005_CommonProjectForBPOT2117/src/main/java  /src/main/java  
 
-RUN mvn -v
+RUN mvn --version
 RUN mvn clean install -DskipTests
 LABEL maintainer="billydev@gmail.com"
 ENTRYPOINT ["java","-jar","/app/target/30780Exp065_JobEngineForOrange-0.0.1-SNAPSHOT.jar"]
+
 
