@@ -1,0 +1,13 @@
+FROM java:8
+FROM maven:alpine
+
+WORKDIR /app
+
+COPY . /app
+COPY ../32602Exp005_CommonProjectForBPOT2117/src/main/java/src  /src/main/java/src 
+
+RUN mvn -v
+RUN mvn clean install -DskipTests
+LABEL maintainer="billydev@gmail.com"
+ENTRYPOINT ["java","-jar","/app/target/30780Exp065_JobEngineForOrange-0.0.1-SNAPSHOT.jar"]
+
