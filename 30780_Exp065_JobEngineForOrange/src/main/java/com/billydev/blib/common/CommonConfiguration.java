@@ -21,16 +21,19 @@ public class CommonConfiguration {
 	 * network setting for server side 
 	 */
 	//public final static String SERVER_ADDRESS="172.17.188.129";      //job engine listener
-	public final static String SERVER_ADDRESS="192.168.1.65";     
+//	public final static String SERVER_ADDRESS="192.168.1.65";     
+	public final static String SERVER_ADDRESS="localhost";     
 	public final static int SERVER_LISTEN_PORT=28080;     //listen to linux client to connect
 	
-	//public final static String WEB_SERVER_ADDRESS="localhost"; //spring boot stuff
-	public final static String WEB_SERVER_ADDRESS="192.168.1.65";
+
+//	public final static String WEB_SERVER_ADDRESS="192.168.1.65";
+	public final static String WEB_SERVER_ADDRESS="localhost"; //spring boot stuff
 	public final static int WEB_SERVER_LISTEN_PORT=8180; //Spring boot listening port
 	
 
 	//public final static String CLIENT_MACHINE_ADDRESS="172.17.188.140"; 
-	public final static String CLIENT_MACHINE_ADDRESS="192.168.1.65";
+//	public final static String CLIENT_MACHINE_ADDRESS="192.168.1.65";
+	public final static String CLIENT_MACHINE_ADDRESS="localhost";
 	public final static int CLIENT_LISTEN_PORT=9898;     //on linux machine
 	
 
